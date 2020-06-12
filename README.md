@@ -1,4 +1,4 @@
-# USe Async Task
+# Use Async Task
 
 Provides an react hook for async tasks.
 
