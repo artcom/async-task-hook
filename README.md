@@ -37,7 +37,7 @@ const MyComponent = ({ url }) => {
 
 ## Tests
 
-Checkout the tests for different scenarios.
+Checkout the [tests](./test/useAsyncTask.test.js) for different scenarios.
 
 ```bash
 npm i && npm run test
