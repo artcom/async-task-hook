@@ -1,4 +1,4 @@
-# Use Async Task
+# Async Task Hook
 
 Provides an react hook for async tasks.
 
@@ -21,7 +21,7 @@ This example queries content with [axios](https://github.com/axios/axios). The c
 ```javascript
 import axios from 'axios'
 import React, { useCallback } from "react"
-import { useAsyncTask, RUNNING, FINISHED, ERROR } from "@artcom/use-async-task"
+import { useAsyncTask, RUNNING, FINISHED, ERROR } from "@artcom/async-task-hook"
 
 const MyComponent = ({ url }) => {
   const queryFunc = useCallback(() => axios.get(url), [url])

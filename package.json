@@ -1,5 +1,5 @@
 {
-  "name": "@artcom/use-async-task",
+  "name": "@artcom/async-task-hook",
   "version": "1.0.0",
   "description": "A react hook to perform async tasks.",
   "files": [
@@ -8,7 +8,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artcom/use-async-task.git"
+    "url": "https://github.com/artcom/async-task-hook.git"
   },
   "license": "MIT",
   "keywords": [
