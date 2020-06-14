@@ -1,6 +1,6 @@
 import React from "react"
 import { render, act } from "@testing-library/react"
-import useAsyncTask, { FINISHED, RUNNING, ERROR } from "../src/index"
+import { useAsyncTask, FINISHED, RUNNING, ERROR } from "../src/index"
 
 const FINAL_RESULT = "FINAL_RESULT"
 const VERY_FINAL_RESULT = "VERY_FINAL_RESULT"

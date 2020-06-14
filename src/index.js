@@ -4,7 +4,7 @@ export const RUNNING = "RUNNING"
 export const FINISHED = "FINISHED"
 export const ERROR = "ERROR"
 
-export default task => {
+export function useAsyncTask(task) {
   const taskRef = useRef(task)
   const stateRef = useRef({ status: RUNNING })
 
