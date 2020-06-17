@@ -21,7 +21,7 @@ export function useAsyncTask(task) {
 
     const runTask = async () => {
       try {
-        const result = await taskRef.current("./testResult")
+        const result = await taskRef.current()
 
         if (!cancelled) {
           stateRef.current = { status: FINISHED, result }
