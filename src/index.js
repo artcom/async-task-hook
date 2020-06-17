@@ -8,13 +8,13 @@ export function useAsyncTask(task) {
   const taskRef = useRef(task)
   const stateRef = useRef({ status: RUNNING })
 
-  const [, setTick] = useState(0)
-  const update = useCallback(() => setTick(tick => tick + 1), [])
-
   if (taskRef.current !== task) {
     taskRef.current = task
     stateRef.current = { status: RUNNING }
   }
+
+  const [, setTick] = useState(0)
+  const update = useCallback(() => setTick(tick => tick + 1), [setTick])
 
   useEffect(() => {
     let cancelled = false
