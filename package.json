@@ -1,6 +1,6 @@
 {
   "name": "@artcom/async-task-hook",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A react hook to perform async tasks.",
   "files": [
     "lib/"
