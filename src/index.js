@@ -14,7 +14,7 @@ export function useAsyncTask(task) {
   }
 
   const [, setTick] = useState(0)
-  const update = useCallback(() => setTick(tick => tick + 1), [setTick])
+  const update = useCallback(() => setTick((tick) => tick + 1), [setTick])
 
   useEffect(() => {
     let cancelled = false
@@ -37,7 +37,9 @@ export function useAsyncTask(task) {
 
     runTask()
 
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+    }
   }, [taskRef.current])
 
   return stateRef.current
